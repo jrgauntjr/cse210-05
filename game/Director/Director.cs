@@ -10,12 +10,6 @@ namespace test.Game
         }
         public void StartGame()
         {
-            while (isPlaying == True)
-            {
-                getInputs();
-                doUpdates();
-                doOutputs();
-            }
         }
         public void getInputs()
         {
