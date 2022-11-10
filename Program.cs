@@ -1,6 +1,6 @@
-﻿using test.Game;
+﻿using Lab05.Game;
 
-namespace test
+namespace Lab05
 {
     class Program
     {
