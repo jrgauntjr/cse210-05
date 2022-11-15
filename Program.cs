@@ -1,4 +1,5 @@
 ﻿using Lab05.Game;
+using Lab05.Game.Directing;
 using Lab05.Game.Actors;
 using Lab05.Game.Services;
 using Lab05.Game.Scripting;
@@ -28,8 +29,6 @@ namespace Lab05
             // start the game
             Director director = new Director(videoService);
             director.StartGame(cast, script);
-            Director director = new Director();
-            director.StartGame();
         }
     }
 }
