@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using Raylib_cs;
-using Lab05.Game.Casting;
+using Lab05.Game.Actors;
 
 
 namespace Lab05.Game.Services

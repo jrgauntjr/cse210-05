@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Reflection.Metadata;
 using Raylib_cs;
-using Lab05.Game.Casting;
+using Lab05.Game.Actors;
 
 
 namespace Lab05.Game.Services
