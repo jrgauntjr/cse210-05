@@ -21,9 +21,9 @@ namespace Lab05
            
             // create the script
             Script script = new Script();
-            script.AddAction("input", new ControlActorsAction(keyboardService));
-            script.AddAction("update", new MoveActorsAction());
-            script.AddAction("update", new HandleCollisionsAction());
+            script.AddAction("input", new controlActors(keyboardService));
+            script.AddAction("update", new moveActor());
+            script.AddAction("update", new collisions());
             script.AddAction("output", new DrawActorsAction(videoService));
 
             // start the game

@@ -10,7 +10,7 @@ namespace Lab05.Game.Scripting
     /// The responsibility of ControlActorsAction is to get the direction and move the snake's head.
     /// </para>
     /// </summary>
-    public class ControlActorsAction : Action
+    public class controlActors : Actor
     {
         private KeyboardService _keyboardService;
         private Point _direction = new Point(Constants.CELL_SIZE, 0);
@@ -18,7 +18,7 @@ namespace Lab05.Game.Scripting
         /// <summary>
         /// Constructs a new instance of ControlActorsAction using the given KeyboardService.
         /// </summary>
-        public ControlActorsAction(KeyboardService keyboardService)
+        public controlActors(KeyboardService keyboardService)
         {
             this._keyboardService = keyboardService;
         }

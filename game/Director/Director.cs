@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using Lab05.Game.Casting;
+using Lab05.Game.Actors;
 using Lab05.Game.Scripting;
 using Lab05.Game.Services;
 
