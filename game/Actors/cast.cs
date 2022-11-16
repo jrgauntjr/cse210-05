@@ -13,7 +13,6 @@ namespace Lab05.Game.Actors
     public class Cast
     {
         private Dictionary<string, List<Actor>> _actors = new Dictionary<string, List<Actor>>();
-
         /// <summary>
         /// Constructs a new instance of Cast.
         /// </summary>
