@@ -12,18 +12,18 @@ namespace Lab05
         {
             Cast cast = new Cast();
             cast.AddActor("food", new powerUp());
-            cast.AddActor("P1", new P1());
-            cast.AddActor("P2", new P2());
+            cast.AddActor("P1", new Cycle());
+            cast.AddActor("P2", new Cycle());
 
             // create the services
-            KeyboardService keyboardService = new KeyboardService();
+            KeyboardService keyboardservice = new KeyboardService();
             VideoService videoService = new VideoService(false);
            
-            // create the script
+         // create the script
             Script script = new Script();
-            script.AddAction("input", new controlActors(KeyboardService));
+            script.AddAction("input", new controlActors(keyboardservice));
             script.AddAction("update", new moveActors());
-            script.AddAction("update", new collision());
+            script.AddAction("update", new collisions());
             script.AddAction("output", new drawActor(videoService));
 
             // start the game
