@@ -23,7 +23,8 @@ namespace Lab05.Game.Scripting
         /// <inheritdoc/>
         public void Execute(Cast cast, Script script)
         {
-             Cycle cycle = (Cycle)cast.GetFirstActor("cycle");
+            Cycle cycle = (Cycle)cast.GetFirstActor("cycle");
+
             List<Actor> actors = cast.GetAllActors();
             foreach (Actor actor in actors)
             {
