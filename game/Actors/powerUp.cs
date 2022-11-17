@@ -23,11 +23,6 @@ namespace Lab05.Game.Actors
         }
 
         /// <summary>
-        /// Gets the points this food is worth.
-        /// </summary>
-        /// <returns>The points.</returns>
-
-        /// <summary>
         /// Selects a random position and points that the food is worth.
         /// </summary>
         public void Reset()

@@ -10,7 +10,7 @@ namespace Lab05.Game.Scripting
     /// The responsibility of ControlActorsAction is to get the direction and move the snake's head.
     /// </para>
     /// </summary>
-    public class controlActors : Actor
+    public class controlActors : Action
     {
         private KeyboardService _keyboardService;
         private Point _direction = new Point(Constants.CELL_SIZE, 0);
@@ -50,7 +50,7 @@ namespace Lab05.Game.Scripting
                 _direction = new Point(0, Constants.CELL_SIZE);
             }
 
-            Cycle cycle = (Cycle)cast.GetFirstActor("snake");
+            Cycle cycle = (Cycle)cast.GetFirstActor("P1");
             cycle.TurnHead(_direction);
 
         }

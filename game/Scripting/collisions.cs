@@ -14,7 +14,7 @@ namespace Lab05.Game.Scripting
     /// collides with the food, or the snake collides with its segments, or the game is over.
     /// </para>
     /// </summary>
-    public class collisions : actions
+    public class collisions : Action
     {
         private bool _isGameOver = false;
 
