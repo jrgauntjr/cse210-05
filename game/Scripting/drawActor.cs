@@ -9,7 +9,7 @@ namespace Lab05.Game.Scripting
     /// <para>An output action that draws all the actors.</para>
     /// <para>The responsibility of DrawActorsAction is to draw each of the actors.</para>
     /// </summary>
-    public class drawActor : actions
+    public class drawActor : Action
     {
         private VideoService _videoService;
 

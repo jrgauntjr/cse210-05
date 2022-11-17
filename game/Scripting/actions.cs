@@ -10,7 +10,7 @@ namespace Lab05.Game.Scripting
     /// Thus, it has one method, Execute(...), which should be overridden by derived classes.
     /// </para>
     /// </summary>
-    public interface actions
+    public interface Action
     {
         /// <summary>
         /// Executes something that is important in the game. This method should be overridden by 
