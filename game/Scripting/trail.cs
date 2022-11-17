@@ -23,11 +23,12 @@ namespace Lab05.Game.Scripting
         /// <inheritdoc/>
         public void Execute(Cast cast, Script script)
         {
+             Cycle cycle = (Cycle)cast.GetFirstActor("cycle");
             List<Actor> actors = cast.GetAllActors();
             foreach (Actor actor in actors)
             {
-                int seg = 1;
-                Cycle.GrowTrail(seg);
+                int seg = 2;
+                cycle.GrowTrail(seg);
             }
         }
     }
