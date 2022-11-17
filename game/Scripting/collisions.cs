@@ -47,8 +47,8 @@ namespace Lab05.Game.Scripting
             
             if (cycle.GetHead().GetPosition().Equals(powerUp.GetPosition()))
             {
-                int points = powerUp.GetPoints();
-                cycle.GrowTrail(points);
+                int seg = 1;
+                cycle.GrowTrail(seg);
                 powerUp.Reset();
             }
         }

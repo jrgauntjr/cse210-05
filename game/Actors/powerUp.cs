@@ -11,14 +11,13 @@ namespace Lab05.Game.Actors
     /// </summary>
     public class powerUp : Actor
     {
-        private int _points = 0;
 
         /// <summary>
         /// Constructs a new instance of an Food.
         /// </summary>
         public powerUp()
         {
-            SetText("@");
+            SetText("*");
             SetColor(Constants.RED); 
             Reset();
         }
@@ -27,10 +26,6 @@ namespace Lab05.Game.Actors
         /// Gets the points this food is worth.
         /// </summary>
         /// <returns>The points.</returns>
-        public int GetPoints()
-        {
-            return _points;
-        }
 
         /// <summary>
         /// Selects a random position and points that the food is worth.
@@ -38,7 +33,6 @@ namespace Lab05.Game.Actors
         public void Reset()
         {
             Random random = new Random();
-            _points = random.Next(9);
             int x = random.Next(Constants.COLUMNS);
             int y = random.Next(Constants.ROWS);
             Point position = new Point(x, y);
