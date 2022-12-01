@@ -18,12 +18,14 @@ namespace Unit05.Game.Scripting
     {
         private bool _isGameOver = false;
 
+
         /// <summary>
         /// Constructs a new instance of HandleCollisionsAction.
         /// </summary>
         public HandleCollisionsAction()
         {
         }
+
 
         /// <inheritdoc/>
         public void Execute(Cast cast, Script script)
@@ -51,7 +53,6 @@ namespace Unit05.Game.Scripting
             if (snake1.GetHead().GetPosition().Equals(food.GetPosition()))
             {
                 int points = food.GetPoints();
-                snake1.GrowTail(points);
                 score.AddPoints(points);
                 food.Reset();
             }
@@ -59,7 +60,6 @@ namespace Unit05.Game.Scripting
             if (snake2.GetHead().GetPosition().Equals(food.GetPosition()))
             {
                 int points = food.GetPoints();
-                snake2.GrowTail(points);
                 score.AddPoints(points);
                 food.Reset();
             }
@@ -120,6 +120,7 @@ namespace Unit05.Game.Scripting
                 // make everything white
                 foreach (Actor segment in segments1)
                 {
+                    
                     segment.SetColor(Constants.WHITE);
                 }
                 

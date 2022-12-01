@@ -19,7 +19,7 @@ namespace Unit05
         static void Main(string[] args)
         {
             Point start1 = new Point(Constants.MAX_X / 6, Constants.MAX_Y / 2);
-            Point start2 = new Point(Constants.MAX_X / 3, Constants.MAX_Y / 2);
+            Point start2 = new Point(Constants.MAX_X / 3, Constants.MAX_Y / 4);
             Color color1 = Constants.GREEN;
             Color color2 = Constants.RED;
 

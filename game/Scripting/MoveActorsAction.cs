@@ -13,12 +13,16 @@ namespace Unit05.Game.Scripting
     /// </summary>
     public class MoveActorsAction : Action
     {
+       
+       
+       
         /// <summary>
         /// Constructs a new instance of MoveActorsAction.
         /// </summary>
         public MoveActorsAction()
         {
         }
+
 
         /// <inheritdoc/>
         public void Execute(Cast cast, Script script)

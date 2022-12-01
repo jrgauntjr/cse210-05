@@ -82,6 +82,9 @@ namespace Unit05.Game.Scripting
             Snake snake2 = (Snake)cast.GetActors("snake")[1];
             snake2.TurnHead(_direction2);
 
+            snake1.GrowTail(1);
+            snake2.GrowTail(1);
+
         }
     }
 }
